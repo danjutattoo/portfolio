@@ -37,7 +37,6 @@ body {
   color: #333;
 }
 
-/* BLOG */
 
 .blog-hero {
   padding: 40px 8% 60px;
@@ -129,7 +128,6 @@ body {
   border-color: #8c1c13;
 }
 
-/* RESPONSIVE BLOG */
 
 @media screen and (max-width: 768px) {
   .blog-hero h1 {
