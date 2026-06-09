@@ -46,13 +46,13 @@ table{
   float:right;clear:right;
 }
 
-.logo,
-.logo:visited,
-.logo:active {
-  color: white;
-  text-decoration: none;
+header a.logo,
+header a.logo:visited,
+header a.logo:active,
+header a.logo:link {
+  color: white !important;
+  text-decoration: none !important;
 }
-
 @media (max-width: 912px) {
   
    .container {
