@@ -1,123 +1,204 @@
 @charset "UTF-8";
 /* CSS Document */
 
-
-
-p {
-  margin-bottom: 2.13rem;
-}
-    
-div:last-child p{
-  margin-bottom: 0;
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+  background-color: #f4f3ef;
 }
 
-.ruta{
-  margin-left:15px; 
-  color:#999;
-  margin-bottom:0;
-}
-.ruta a, .ruta visited{
-  color:crimson;text-decoration: none;
-}
-
-h2{
-  padding-top:0;
-  line-height:2.50rem;
-  margin-bottom: 0.999rem;
-}
-
-.introduccion{
-  grid-column:1 / span 6;
-  grid-row:1 / span 1;}
-
-.introduccion p{
-  margin-bottom:0;
-}
-
-.gato{
-  grid-column:1 / span 3;
-  grid-row:2 / span 1;
-  align-self:end;
-}
-
-.torre{  
-  grid-column:4 / span 4;
-  grid-row-end: span 2;
-  align-self:end;
-}
-
-.mono{
-  grid-column:8 / span 2;
-  grid-row:2/ span 1;
-}
-
-.textomono{
-  grid-column:10 / span 3;
-  grid-row:2/ span 1;
-}
-
-.textogato{
-  grid-column:1 / span 3;
-  grid-row:3/ span 1;
-  align-self:start;
-}
-
-.textotorre{
-  grid-column:8 / span 3;
-  grid-row:3/ span 1;
-  align-self:end;
-}
-
-.pagination {
-  display: flex;
-  flex-wrap: wrap;
-  text-align: center;
-  flex-direction:row;
-  justify-content:space-between;
-  padding: 0px 15px 15px 15px;
-}
-
-.pagination a {
-  color: crimson;
-  float: left;
-  padding: 8px 16px;
+.logo,
+.logo:link,
+.logo:visited,
+.logo:active {
+  color: white;
   text-decoration: none;
-  transition: background-color .3s;
-  border: 1px solid #ddd;
 }
-a.pag:hover{
-  background-color: #ddd;   
+
+.logo:hover {
+  opacity: 0.7;
+}
+
+
+.ruta {
+  margin: 24px 40px 0 40px;
+  color: #999;
+  font-size: 0.9rem;
+}
+
+.ruta a,
+.ruta a:visited {
+  color: #c33723;
+  text-decoration: none;
+}
+
+.ruta a:hover {
+  text-decoration: underline;
+}
+
+
+.proyecto-header {
+  max-width: 900px;
+  padding: 60px 40px 30px 40px;
+}
+
+.overline {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.8rem;
+  color: #c33723;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.proyecto-header h1 {
+  font-size: 4rem;
+  line-height: 1;
+  margin: 0 0 24px 0;
+  color: #2f2f2f;
+}
+
+.proyecto-header p {
+  max-width: 650px;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0;
 }
 
 
 .proyecto-galeria {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   gap: 24px;
   padding: 40px;
 }
 
-.proyecto-galeria img {
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: cover;
+.proyecto-bloque {
+  background-color: white;
+  border: 1px solid #dddddd;
+  overflow: hidden;
 }
 
-.proyecto-galeria .imagen-grande {
+.proyecto-bloque img {
+  width: 100%;
+  height: 100%;
+  min-height: 420px;
+  object-fit: cover;
+  display: block;
+}
+
+.proyecto-bloque.texto {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.proyecto-bloque.texto h2 {
+  font-size: 2rem;
+  line-height: 1.1;
+  margin: 0 0 16px 0;
+  color: #0c0c0c;
+}
+
+.proyecto-bloque.texto p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.imagen-grande {
   grid-column: span 2;
+}
+
+.imagen-grande img {
+  height: 620px;
+}
+
+
+.pagination {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 40px 60px 40px;
+}
+
+.pagination a {
+  color: white;
+  background-color: #0c0c0c;
+  padding: 12px 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.pagination a:hover {
+  background-color: #c33723;
+}
+
+
+footer {
+  width: 100%;
+  background-color: #ccc;
+}
+
+footer p {
+  font-size: 0.8em;
+  text-align: center;
+  padding: 15px;
+  margin: 0;
+}
+
+footer a,
+footer a:visited,
+footer a:active {
+  color: black;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #c33723;
 }
 
 
 @media (max-width: 912px) {
-  
- 
-   .container {
-   display:block;
-   margin-left: 15px; 
-   margin-right: 15px;
+  .ruta {
+    margin: 20px 20px 0 20px;
   }
-   div.introduccion{
-   margin-bottom:25px;
-    }
+
+  .proyecto-header {
+    padding: 40px 20px 20px 20px;
+  }
+
+  .proyecto-header h1 {
+    font-size: 2.6rem;
+  }
+
+  .proyecto-galeria {
+    grid-template-columns: 1fr;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .imagen-grande {
+    grid-column: span 1;
+  }
+
+  .imagen-grande img,
+  .proyecto-bloque img {
+    height: auto;
+    min-height: auto;
+  }
+
+  .proyecto-bloque.texto {
+    padding: 24px;
+  }
+
+  .pagination {
+    padding: 20px;
+  }
+
+  .pagination a {
+    width: 100%;
+    text-align: center;
+  }
 }
