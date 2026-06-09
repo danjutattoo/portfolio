@@ -203,6 +203,7 @@ footer img{
    padding: 15px 0px;
    margin-left:15px;
    margin-right:15px;
+    img:100%
   }
    .uno, .dos, .tres, .cuatro, .cinco, .seis, .siete, .ocho, .nueve{grid-column:1 / 1}
    h1 {margin-left: 15px;}
