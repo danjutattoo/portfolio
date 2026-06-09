@@ -237,6 +237,38 @@ a:hover{
 .contacto-extra a:hover {
   text-decoration: underline;
 }
+
+.form-buttons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.form-buttons button {
+  padding: 14px 24px;
+  border: none;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.form-buttons button[type="submit"] {
+  background-color: #8c1c13;
+  color: white;
+}
+
+.btn-reset {
+  background-color: transparent;
+  color: #0c0c0c;
+  border: 1px solid #0c0c0c !important;
+}
+
+.btn-reset:hover {
+  background-color: #0c0c0c;
+  color: white;
+}
 @media (max-width: 768px) {
   .contacto {
     padding: 50px 20px;
