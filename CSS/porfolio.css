@@ -3,7 +3,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Source+Sans+Pro:wght@400;600;700&display=swap');
 
-/* RESET */
 
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -38,7 +37,6 @@ body {
   background-color: white;
 }
 
-/* ENLACES GENERALES */
 
 a {
   text-decoration: none;
@@ -53,7 +51,6 @@ a:active {
   color: crimson;
 }
 
-/* LOGO */
 
 .logo,
 .logo:link,
@@ -67,7 +64,6 @@ a:active {
   opacity: 0.7;
 }
 
-/* HERO */
 
 .hero {
   display: flex;
@@ -131,7 +127,6 @@ a:active {
   display: block;
 }
 
-/* SECCIÓN PORTFOLIO */
 
 .trabajos-section {
   padding: 70px 40px 50px 40px;
@@ -166,7 +161,6 @@ a:active {
   color: #555;
 }
 
-/* CARDS PORTFOLIO */
 
 .container {
   display: grid;
@@ -192,7 +186,7 @@ a:active {
 
 .portfolio-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  box-shadow: #c33723;
 }
 
 .portfolio-card img {
