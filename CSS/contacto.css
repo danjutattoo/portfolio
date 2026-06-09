@@ -35,6 +35,15 @@
   color: #333;
 }
 
+.calendario-iframe {
+  width: 100%;
+  overflow: hidden;
+}
+
+.calendario-iframe iframe {
+  width: 100%;
+  min-height: 700px;
+}
 .btn-calendario,
 .btn-calendario:link,
 .btn-calendario:visited,
