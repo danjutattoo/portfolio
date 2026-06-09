@@ -35,11 +35,14 @@
   color: #333;
 }
 
-.btn-calendario {
+.btn-calendario,
+.btn-calendario:link,
+.btn-calendario:visited,
+.btn-calendario:active {
   display: inline-block;
   padding: 14px 24px;
   background-color: #0c0c0c;
-  color: white;
+  color: white !important;
   text-decoration: none;
   font-weight: bold;
 }
