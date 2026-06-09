@@ -53,6 +53,29 @@ header a.logo:link {
   color: white !important;
   text-decoration: none !important;
 }
+
+.btn-instagram {
+  display: inline-block;
+  margin-top: 24px;
+  padding: 12px 22px;
+  background-color: #0c0c0c;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 0;
+  transition: 0.3s ease;
+}
+
+.btn-instagram:visited,
+.btn-instagram:active {
+  color: white;
+}
+
+.btn-instagram:hover {
+  background-color: #8c1c13;
+  color: white;
+}
+
 @media (max-width: 912px) {
   
    .container {
