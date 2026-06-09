@@ -75,7 +75,13 @@ header a.logo:link {
   background-color: #8c1c13;
   color: white;
 }
-
+.sobre-mi img {
+  width: 380px;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
 @media (max-width: 912px) {
   
    .container {
