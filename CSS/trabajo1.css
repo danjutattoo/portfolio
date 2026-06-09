@@ -89,6 +89,26 @@ a.pag:hover{
   background-color: #ddd;   
 }
 
+
+.proyecto-galeria {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  padding: 40px;
+}
+
+.proyecto-galeria img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.proyecto-galeria .imagen-grande {
+  grid-column: span 2;
+}
+
+
 @media (max-width: 912px) {
   
  
