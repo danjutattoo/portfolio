@@ -156,6 +156,7 @@ a:active {
 
 .cta-btn {
   display: inline-block;
+  width: fit-content;
   padding: 14px 24px;
   background-color: #0c0c0c;
   color: white !important;
@@ -302,7 +303,6 @@ footer a:hover {
   color: #8c1c13;
 }
 
-/* RESPONSIVE */
 
 @media (max-width: 913px) {
   .trabajos-section {
@@ -353,6 +353,7 @@ footer a:hover {
     height: auto;
   }
 }
+@media (max-width: 768px) {
   .cta-reserva {
     grid-template-columns: 1fr;
     padding: 50px 20px;
@@ -363,7 +364,7 @@ footer a:hover {
   }
 
   .cta-btn {
-    width: 100%;
-    text-align: center;
+    width: fit-content;
+    text-align: left;
   }
 }
