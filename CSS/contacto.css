@@ -1,7 +1,6 @@
 @charset "UTF-8";
 /* CSS Document */
 
-/* LOGO */
 
 .logo,
 .logo:visited,
@@ -14,7 +13,6 @@
   opacity: 0.7;
 }
 
-/* CONTACTO */
 
 .contacto {
   background-color: #f4f3ef;
@@ -53,8 +51,6 @@
   line-height: 1.6;
   color: #333;
 }
-
-/* FORMULARIO */
 
 .contacto-form {
   background-color: white;
@@ -98,10 +94,11 @@
   background-color: white;
 }
 
-/* BOTONES */
 
 .form-buttons {
   display: flex;
+  justify-content:space-between;
+  align-items: center;
   gap: 12px;
   flex-wrap: wrap;
   margin-top: 10px;
@@ -137,7 +134,7 @@
   color: white;
 }
 
-/* TEXTO EXTRA */
+
 
 .contacto-extra {
   margin-top: 28px;
@@ -155,7 +152,7 @@
   text-decoration: underline;
 }
 
-/* RESPONSIVE */
+
 
 @media (max-width: 768px) {
   .contacto {
@@ -176,5 +173,8 @@
 
   .form-buttons button {
     width: 100%;
+  }
+  .btn-reset{
+    margin-left:0;
   }
 }
