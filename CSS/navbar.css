@@ -15,10 +15,29 @@ body {
 }
 
 .top-nav {
+  height: 70px;
+  padding: 0 30px;
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: space-between;
+}
+
+#brand {
+  display: flex;
+  align-items: center;
+}
+
+.logo,
+.logo:link,
+.logo:visited,
+.logo:active {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1;
+  color: white;
+  text-decoration: none;
+}
 
   background: linear-gradient(to right, orange, rgb(170, 9, 49));
   color: #FFF;
@@ -38,16 +57,12 @@ body {
 
 .menu {
   display: flex;
-  flex-direction: row;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+align.items:center;
 }
 
-.menu > li {
-  margin: 0 1rem;
-  overflow: hidden;
-  font-weight: 600;
+.menu > li a{
+ font-size: 16px;
+  line-height: 1;
 }
 
 .menu > li a:link,
