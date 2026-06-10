@@ -17,18 +17,16 @@ main {
 width: 100%;
 }
 
-/* LOGO */
-
 .logo,
 .logo:link,
 .logo:visited,
 .logo:active {
-color: white;
-text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 .logo:hover {
-opacity: 0.7;
+  opacity: 0.7;
 }
 
 
