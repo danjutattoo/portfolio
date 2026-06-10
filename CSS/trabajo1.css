@@ -206,6 +206,13 @@ color: #c33723;
 display: none;
 }
 
+.img-loto {
+  object-position: center 30%;
+}
+
+.img-chihiro {
+  object-position: center 20%;
+}
 
 @media (max-width: 912px) {
 
