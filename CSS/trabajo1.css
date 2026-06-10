@@ -29,6 +29,12 @@ width: 100%;
   opacity: 0.7;
 }
 
+.top-nav #brand .logo,
+.top-nav #brand .logo:link,
+.top-nav #brand .logo:visited,
+.top-nav #brand .logo:active {
+  font-size: 0.95rem;
+}
 
 .ruta {
 margin: 32px 40px 0 40px;
