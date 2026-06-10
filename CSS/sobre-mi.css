@@ -9,15 +9,6 @@ body {
 }
 
 
-header a.logo,
-header a.logo:visited,
-header a.logo:active,
-header a.logo:link {
-  color: white !important;
-  text-decoration: none !important;
-}
-
-
 .sobre-mi-page {
   display: grid;
   grid-template-columns: 380px 1fr;
